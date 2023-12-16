@@ -2,14 +2,14 @@
 
 // Інструкція if...else
 
-// function makeTransaction(quantity, pricePerDroid, customerCredits) {
-//     const totalPrice = quantity * pricePerDroid;
-//     if (totalPrice > customerCredits) {
-//         return "Insufficient funds!";
-//     } else {
-//         return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
-//     }
-// };
+function makeTransaction(quantity, pricePerDroid, customerCredits) {
+    const totalPrice = quantity * pricePerDroid;
+    if (totalPrice > customerCredits) {
+        return "Insufficient funds!";
+    } else {
+        return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+    }
+};
 
 
 // Тернарний оператор
@@ -22,17 +22,17 @@
 
 // Оператор switch
 
-function makeTransaction(quantity, pricePerDroid, customerCredits) {
-    const totalPrice = quantity * pricePerDroid;
-    switch (totalPrice > customerCredits) {
-        case true:
-            return "Insufficient funds!";
-            break;
+// function makeTransaction(quantity, pricePerDroid, customerCredits) {
+//     const totalPrice = quantity * pricePerDroid;
+//     switch (totalPrice > customerCredits) {
+//         case true:
+//             return "Insufficient funds!";
+//             break;
 
-        default: return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
-            break;
-    }
-};
+//         default: return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+//             break;
+//     }
+// };
 
 
 console.log(makeTransaction(5, 3000, 23000)); // "You ordered 5 droids worth 15000 credits!"
